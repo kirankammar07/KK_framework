@@ -13,8 +13,10 @@ public class Base_Test implements Framework_const{
 		System.setProperty("webdriver.chrome.driver","./softwares/chromedriver.exe");
 		
 		driver=new ChromeDriver();
+		//launch browser
 		driver.manage().window().maximize();
 		driver.get(base_url);
+		//get url
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
 		@AfterMethod
